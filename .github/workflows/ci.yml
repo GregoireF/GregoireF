@@ -1,53 +1,6 @@
 name: CI
 on: [pull_request, push]
 jobs:
-  badges: 
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          badges: 'gh_license,gh_version,gh_stars,gh_fork,gh_followers,gh_open_issues,gh_closed_issues,gh_open_pr,gh_dependencies,gh_repo_size,gh_code_size'
-          badge-style: 'flat-square'
-  prepare:
-    name: Prepare
-    runs-on: ubuntu-latest
-    steps:
-      - uses: DerYeger/yarn-setup-action@master
-        with:
-          node-version: 16
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - uses: DerYeger/yarn-setup-action@master
-        id: yarn-cache
-        with:
-          node-version: 16
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - run: yarn build
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - uses: DerYeger/yarn-setup-action@master
-        with:
-          node-version: 16
-      - run: yarn lint
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - uses: DerYeger/yarn-setup-action@master
-        with:
-          node-version: 16
-      - run: yarn test
   prettier:
     name: Prettier Code
     runs-on: ubuntu-latest
