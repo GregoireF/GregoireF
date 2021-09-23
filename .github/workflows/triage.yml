@@ -1,0 +1,18 @@
+name: Triage
+on:
+  issues:
+    types: [opened, closed, milestoned, demilestoned] # The last two are not needed if milestone is set to false
+  project_card: # Not needed if project is set to false
+    types: [created, deleted]
+
+jobs:
+  build:
+    name: Triage
+    runs-on: ubuntu-16.04
+    steps:
+    - uses: Logerfo/triage-action@0.0.2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} # The `GITHUB_TOKEN` secret.
+        label: triage # The triage label of your repository.
+        project: true # Enable or disable the idea that adding an issue to a project drops its triage state.
+        milestone: true # Enable or disable the idea that setting a milestone to an issue drops its triage state.

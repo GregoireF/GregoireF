@@ -1,0 +1,30 @@
+# https://github.com/probot/semantic-pull-requests
+# (chore|feat|docs|fix|refactor|style|test|sonar|hack|release)(:)( )(.{0,80})
+# Always validate the PR title AND all the commits
+titleAndCommits: true
+# Allow use of Merge commits (eg on github: "Merge branch 'master' into feature/ride-unicorns")
+# this is only relevant when using commitsOnly: true (or titleAndCommits: true)
+allowMergeCommits: true
+scopes:
+  - :tada: initial commit
+  - :bookmark: version
+  - :sparkles: feat
+  - :bug: fix
+  - :book: docs
+  - :lipstick: design
+  - :rotating_light: test
+  - :white_check_mark: add test
+  - :zap: general update
+  - :hammer: refactor
+  - :fire: remove
+  - :green_heart: ci
+  - :lock: security
+  - :robot: bots
+  - :alien: translation
+  - :construction: work
+  - :arrow_up: upgrading dependencies
+  - :arrow_down: downgrading dependencies
+  - :heavy_minus_sign: removing a dependency
+  - :heavy_plus_sign: adding a dependency
+  - :wrench: configuration
+  - :rocket: deploying stuff

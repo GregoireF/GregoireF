@@ -1,0 +1,50 @@
+{
+  "enabled": true,
+  "major": {
+    "enabled": true
+  },
+  "baseBranches": [
+    "development"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/vendor/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": ":construction: chore:"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "require"
+      ],
+      "semanticCommitType": ":arrow_up: up deph:"
+    }
+  ],
+  "assignees": [
+    "GregoireF",
+    "NicolasV"
+  ],
+  "reviewers": [
+    "GregoireF"
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": [
+      "Vulnerability Alert"
+    ]
+  },
+  "semanticCommits": "enabled",
+  "rangeStrategy": "auto",
+  "extends": [
+    "config:base"
+  ]
+}

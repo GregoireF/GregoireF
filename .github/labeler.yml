@@ -1,0 +1,29 @@
+bots :
+- renovate.js
+
+docs :
+- README.md
+- LICENSE
+
+package :
+- package.json
+- yarn.lock
+- src/package.json
+
+github :
+- .gitattributes
+- .gitignore
+- .github/*.*
+- .github/*/*.*
+
+eslint :
+- .eslintrc
+
+nuxt :
+- renderer/*/
+- renderer/*.*
+- renderer/
+
+electron :
+- build/*.*
+- build/*/*.*
