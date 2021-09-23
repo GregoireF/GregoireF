@@ -1,63 +1,58 @@
-# :green_heart: actions-template
+### Hi, nice to meet you on my Github! :tada:
+---
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?style=flat-square)](https://GitHub.com/GregoireF/actions-template/graphs/commit-activity)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c?style=flat-square)](https://github.com/GregoireF/actions-template/discussions)
-[![GitHub license](https://img.shields.io/github/license/GregoireF/actions-template?style=flat-square)](https://github.com/GregoireF/actions-template/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/GregoireF/actions-template?include_prereleases&style=flat-square)](https://github.com/GregoireF/actions-template/releases/)
-[![Github all releases](https://img.shields.io/github/downloads/GregoireF/actions-template/total?style=flat-square)](https://github.com/GregoireF/actions-template/releases/)
-[![GitHub forks](https://img.shields.io/github/forks/GregoireF/actions-template?style=flat-square)](https://github.com/GregoireF/actions-template/network/members)
-[![GitHub stars](https://img.shields.io/github/stars/GregoireF/actions-template?style=flat-square)](https://github.com/GregoireF/actions-template/stargazers/)
-[![GitHub contributors](https://img.shields.io/github/contributors/GregoireF/actions-template?style=flat-square)](https://github.com/GregoireF/actions-template/graphs/contributors)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
 
-### :coffee: A little history behind this project...
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=gfavreau&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD)](https://github.com/GregoireF/)
 
-actions-template is a project to include github-actions for each start of a new project via Github.com. This project is intended to help create consistency in open source collaborative development.<br>To follow the Github guidelines as much as you can, it is recommended to have a "development" branch so as not to impact the main branch during development.<br>To make nice commits, you can look at [the guideline around Github commits](https://www.conventionalcommits.org/en/v1.0.0/) and [a list of icons](https://github.com/GregoireF/actions-template/blob/main/.github/GUIDELINE_COMMITEMOJI.md) to use for your titles too.
+I am glad to find you here. Let me offer you a :coffee: while I introduce myself.
+I am Grégoire FAVREAU, and I am coming from the North of France. I like the Internet and its constantly evolving, but more specifically web development (frontend as well as backend).
+- :telescope: I’m currently working
+- ❤️ I like to learn by myself
+- :rocket: Co-creator of [WebReadyProjects](https://github.com/WebReadyProjects)
+- :speech_balloon: Ask me about anything [here](https://github.com/GregoireF/GregoireF/issues)
 
-##
+**Social Networks**
 
-### :rocket: Get Started
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/facebook/facebook-original.svg" width="30"/>](https://facebook.com "Facebook")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg" width="30"/>](https://www.twitter.com "Twitter")
+[<img src="https://raw.githubusercontent.com/anuraghazra/anuraghazra/master/assets/discord-round.svg" width="30"/>](https://discord.gg "Discord")
+-
+**Languages I use:**
 
-- Make a fork to the desired location (organisation or your profile)
-- Go to the settings of your newly created project and check in your options that the "Template repository" box is checked
-- You can now create new projects using the "Repository template" option and choose your project that contains the Github-Actions workflow
-- [Install Renovate Bot](https://github.com/marketplace/renovate)
-- :tada: You can now use Github Actions!
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30"/>](https://html.spec.whatwg.org/multipage/ "HTML5")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30"/>](https://www.w3.org/Style/CSS/#specs "CSS3")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" width="30"/>](https://sass-lang.com "Sass")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="30"/>](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/ "Javascript")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="30"/>](https://www.typescriptlang.org/ "Typescript")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="30"/>](https://www.python.org/ "Python")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="30"/>](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown")
 
-##
+**Frameworks I use:**
 
-### :page_facing_up: What can I offer you?
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" width="30"/>](https://www.electronjs.org/ "Electron")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" width="30"/>](https://www.djangoproject.com/ "Django")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" width="30"/>](https://vuejs.org/ "VueJS")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg" width="30"/>](https://nuxtjs.org/ "NuxtJS")
+[<img src="https://avatars.githubusercontent.com/u/22138497?s=200&v=4" height="30"/>](https://vuetifyjs.com/en/introduction/why-vuetify/ "Vuetify")
 
-- :books: PR Template: Added a default template for PRs
-- :books: PR Emoji List: Added a default template for Issues
-- :books: Bug Report Template: Added a default template for bug report
-- :construction_worker: TypeScript Compiler: TypeScript code checking
-- :construction_worker: Triage: Putting the issues away
-- :construction_worker: Pull Request Labeler: Apply useful labels according to the changes
-- :construction_worker: Pull Request: Automatic assignment of the PR to the creator of the PR
-- :construction_worker: Lock Threads: Closing of threads in certain cases (age of thread, inactivity,...)
-- :construction_worker: Linter Code: Code cleaning according to Lint conventions
-- :construction_worker: Compress Image: Compression of images at each addition in order to reduce their weight (PNG,JPEG,WEBP,GIF,...)
-- :green_heart: CI: Yarn Environment: Installing a NodeJS environment with Yarn
-- :robot: Bots: Renovate Bot to manage project dependencies
-  > _More coming soon_
+**Tools I use:**
 
-##
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/>](https://nodejs.org/ "NodeJS")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="30"/>](https://code.visualstudio.com/ "Visual Studio Code")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg" width="30"/>](https://webpack.js.org/ "Webpack")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original.svg" width="30"/>](https://yarnpkg.com/ "Yarn")
 
-### :superhero: Become a contributor
+**Server:**
 
-Developers interested in contributing should read the [Code of Conduct](https://github.com/GregoireF/actions-template/blob/main/.github/CODE_OF_CONDUCT.md) and the [Contribution Guide](https://google.com).
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="30"/>](https://www.linux.org/ "Linux Server")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="30"/>](https://www.microsoft.com/fr-fr/windows-server "Windows Server")
 
-> Please do **not** ask general questions in an issue. Issues are only to report bugs, suggest
-> enhancements, or request new features.
+**Design UI/UX:**
 
-##
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" width="30"/>](https://www.figma.com/ "Figma")
 
-### :earth_africa: Used by
+**Collaboration:**
 
-[![GitHub contributors](https://avatars.githubusercontent.com/u/84878971?s=60&v=4)](https://github.com/WebReadyProjects)
-
-##
-
-### :heart: Thanks
-
-This project was initiated when new projects were created via Github to ensure code consistency throughout development. Many thanks to [the Github community](https://github.com/marketplace) for sharing various Github actions.
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/slack/slack-original.svg" width="30"/>](https://slack.com/ "Slack")
+[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="30"/>](https://git-scm.com/ "Git")
