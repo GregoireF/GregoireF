@@ -2,7 +2,7 @@
 
 ---
 
-[<img align="right" width="150" src="https://count.getloli.com/get/@:GregporeF" alt=":Gregoire">](https://discord.com/channels/@me/586535603793821696)
+[<img align="right" width="150" src="https://count.getloli.com/get/@:GregoireF" alt=":GregoireF">]
 [![GregoireF's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
 
 I am glad to find you here. Let me offer you a :coffee: while I introduce myself.
