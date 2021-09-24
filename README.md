@@ -1,10 +1,8 @@
 ### Hi, nice to meet you on my Github! :tada:
 
 ---
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
-
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=gfavreau&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD)](https://github.com/GregoireF/)
+[<img align="right" width="150" src="https://count.getloli.com/get/@:GregporeF" alt=":Gregoire">](https://discord.com/channels/@me/586535603793821696)
+[![GregoireF's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
 
 I am glad to find you here. Let me offer you a :coffee: while I introduce myself.
 I am Grégoire FAVREAU, and I am coming from the North of France. I like the Internet and its constantly evolving, but more specifically web development (frontend as well as backend).
@@ -14,11 +12,7 @@ I am Grégoire FAVREAU, and I am coming from the North of France. I like the Int
 - :rocket: Co-creator of [WebReadyProjects](https://github.com/WebReadyProjects)
 - :speech_balloon: Ask me about anything [here](https://github.com/GregoireF/GregoireF/issues)
 
-**Social Networks**
-
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/facebook/facebook-original.svg" width="30"/>](https://facebook.com "Facebook")
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg" width="30"/>](https://www.twitter.com "Twitter")
-[<img src="https://raw.githubusercontent.com/anuraghazra/anuraghazra/master/assets/discord-round.svg" width="30"/>](https://discord.gg "Discord")
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=gfavreau&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD)](https://github.com/GregoireF/)
 
 - **Languages I use:**
 
