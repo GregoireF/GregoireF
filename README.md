@@ -17,7 +17,7 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
 
 <details>
     <summary><b>📰 Recent activity</b></summary>
-    <img src="https://github.com/GregoireF/GregoireF/blob/main/.cache/followup.svg">
+    <img src="https://github.com/GregoireF/GregoireF/blob/main/.cache/activity.svg">
 </details>
 
 <details>
