@@ -17,7 +17,7 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
 
 <details>
     <summary><b>📰 Recent activity</b></summary>
-    <%- await embed(`followup`, { followup: true }) %>
+    <%- await embed(`activity`, { activity: true }) %>
 </details>
 
 <details>
