@@ -48,6 +48,3 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
         <img src="https://github.com/GregoireF/GregoireF/blob/main/.cache/achievements_detailed.svg">
     </details>
 </details>
-
-[![GregoireF's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
-
