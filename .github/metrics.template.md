@@ -22,7 +22,7 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
 
 <details>
     <summary><b>🗓️ My Calendar</b></summary>
-    <%- await embed(`isocalendar`, { isocalendar: true, isocalendar_duration: "half-year" }) %>
+    <%- await embed(`isocalendar`, { isocalendar: true, isocalendar_duration: "full-year" }) %>
 </details>
 
 <details>

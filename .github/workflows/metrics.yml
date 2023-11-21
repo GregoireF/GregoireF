@@ -29,7 +29,6 @@ jobs:
 
           # Achievements
           plugin_achievements: yes
-          plugin_achievements_threshold: C
           plugin_achievements_display: compact
 
           # RecentActivity
