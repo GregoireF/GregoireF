@@ -42,12 +42,9 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
 
 <details>
     <summary><b>🏅 Achievements</b></summary>
-    <%- await embed(`achievements`, { achievements: true, achievements_threshold: "C", achievements_display: "compact" }) %>
+    <%- await embed(`achievements`, { achievements: true, achievements_display: "compact" }) %>
     <details>
         <summary><b>Detailed</b></summary>
-        <%- await embed(`achievements_detailed`, { achievements: true, achievements_threshold: "C", achievements_display: "detailed" }) %>
+        <%- await embed(`achievements_detailed`, { achievements: true, achievements_display: "detailed" }) %>
     </details>
 </details>
-
-[![GregoireF's GitHub stats](https://github-readme-stats.vercel.app/api?username=GregoireF&count_private=true&show_icons=true&theme=highcontrast&include_all_commits=true&border_radius=30&hide_border=true&bg_color=313849&title_color=667EBD&text_color=B1BACD&icon_color=467D46&)](https://github.com/GregoireF/)
-
