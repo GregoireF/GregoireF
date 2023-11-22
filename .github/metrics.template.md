@@ -15,6 +15,8 @@ Hi, my name is Grégoire FAVREAU. I'm a 25 years old developer and computer enth
 
 <%- await embed(`base`, { base: "header, activity, community, repositories, metadata" }) %>
 
+![github-contribution-grid-snake](https://user-images.githubusercontent.com/89845641/218791674-c52db856-24d2-429f-8867-170c365730d1.svg)
+
 <details>
     <summary><b>📰 Recent activity</b></summary>
     <%- await embed(`activity`, { activity: true }) %>
