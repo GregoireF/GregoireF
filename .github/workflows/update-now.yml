@@ -38,6 +38,9 @@ jobs:
           replacement = "<!-- NOW:START -->\n" + now_clean + "\n<!-- NOW:END -->"
           new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
 
+          if not new_readme.endswith("\n"):
+              new_readme += "\n"
+
           pathlib.Path("README.md").write_text(new_readme, encoding="utf-8")
           print("✅ README mis à jour avec NOW.md")
           EOF

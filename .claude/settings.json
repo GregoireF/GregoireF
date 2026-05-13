@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes markdownlint-cli2 README.md NOW.md --config .markdownlint.json)",
+      "PowerShell(gh auth status 2>&1)",
+      "PowerShell(winget --version 2>&1)",
+      "PowerShell(winget install --id GitHub.cli --silent --accept-package-agreements --accept-source-agreements 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); gh --version 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); gh auth status 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); $cred = \"url=https://github.com`nhost=github.com\" | git credential fill 2>&1; if \\($cred -match \"password=\\(.+\\)\"\\) { $token = $Matches[1]; Write-Host \"Token found \\(length: $\\($token.Length\\)\\)\"; $token | gh auth login --with-token 2>&1 } else { Write-Host \"No stored credential found\"; Write-Host $cred })",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); $input = \"protocol=https`nhost=github.com`n\"; $cred = [System.Text.Encoding]::ASCII.GetBytes\\($input\\) | git credential fill 2>&1; Write-Host $cred)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); $stored = git config --global credential.helper 2>&1; Write-Host \"Credential helper: $stored\"; $creds = cmdkey /list 2>&1 | Select-String -Pattern \"github\" -SimpleMatch; Write-Host \"GitHub credentials in cmdkey:\"; Write-Host $creds)",
+      "Bash(gh auth *)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); git diff --stat)"
+    ]
+  }
+}

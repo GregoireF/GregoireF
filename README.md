@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=220&section=header&text=Grégoire%20Favreau&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Dev%20%2B%20Ops%20—%20du%20repo%20à%20la%20prod%2C%20seul.&descAlignY=58&descSize=18&descColor=e0e7ff&animation=fadeIn" alt="Grégoire Favreau — Dev + Ops" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=1400&color=818CF8&center=true&vCenter=true&width=580&lines=Vue+·+React+·+Node+·+TypeScript+·+Astro+·+Docker;feature+→+CI+→+prod+🚀+sans+toucher+une+console;je+fais+le+front,+le+back,+l'infra+—+seul,+bout+en+bout;J'automatise+ce+qui+ne+devrait+pas+l'être." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=1400&color=818CF8&center=true&vCenter=true&width=580&lines=Vue+%C2%B7+React+%C2%B7+Node+%C2%B7+TypeScript+%C2%B7+Astro+%C2%B7+Docker;feature+%E2%86%92+CI+%E2%86%92+prod+%F0%9F%9A%80+sans+toucher+une+console;je+fais+le+front%2C+le+back%2C+l%27infra+%E2%80%94+seul%2C+bout+en+bout;J%27automatise+ce+qui+ne+devrait+pas+l%27%C3%AAtre." alt="Typing SVG" />
 
 <br/>
 
@@ -10,7 +10,7 @@
 [![Email](https://img.shields.io/badge/Me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gfavreau.wrprojects@gmail.com)
 [![Linktree](https://img.shields.io/badge/Linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/gregoiref)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/gregoirefavreau)
-[![Disponible](https://img.shields.io/badge/🟢_Disponible-CDI_·_Freelance_·_Mission-22c55e?style=for-the-badge)](mailto:gfavreau.wrprojects@gmail.com)
+[![Disponible](https://img.shields.io/badge/Disponible-CDI_%C2%B7_Freelance_%C2%B7_Mission-22c55e?style=for-the-badge&labelColor=16a34a)](mailto:gfavreau.wrprojects@gmail.com)
 
 <br/>
 
@@ -113,7 +113,7 @@ Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vér
 | Projet | Ce que ça fait concrètement | Stack |
 | :-- | :-- | :-- |
 | **[Profil GitHub auto-maintenu](https://github.com/GregoireF/GregoireF)** | 5 workflows CI/CD · metrics quotidiennes · health-check hebdo · zéro maintenance manuelle | GitHub Actions · Python |
-| **Infrastructure k3s *(WIP)*** | Cluster Kubernetes auto-hébergé · stockage distribué Longhorn · ingress Traefik · TLS auto | k3s · Helm · Terraform · Linux |
+| **Infrastructure k3s** (WIP) | Cluster Kubernetes auto-hébergé · stockage distribué Longhorn · ingress Traefik · TLS auto | k3s · Helm · Terraform · Linux |
 
 </div>
 
