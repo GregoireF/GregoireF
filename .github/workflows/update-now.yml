@@ -1,0 +1,50 @@
+name: 📍 Update NOW section
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "NOW.md"
+  workflow_dispatch:
+
+jobs:
+  update-now:
+    name: Inject NOW.md into README
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+      - name: 📍 Inject NOW.md into README
+        run: |
+          python3 << 'PYEOF'
+import re
+import pathlib
+
+now_raw = pathlib.Path("NOW.md").read_text(encoding="utf-8")
+lines = [l for l in now_raw.splitlines() if not l.strip().startswith("<!--")]
+now_clean = "\n".join(lines).strip()
+
+readme = pathlib.Path("README.md").read_text(encoding="utf-8")
+pattern = r"<!-- NOW:START -->.*?<!-- NOW:END -->"
+replacement = "<!-- NOW:START -->\n" + now_clean + "\n<!-- NOW:END -->"
+new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+
+pathlib.Path("README.md").write_text(new_readme, encoding="utf-8")
+print("✅ README mis à jour avec NOW.md")
+PYEOF
+
+      - name: 💾 Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet && echo "Rien à commiter" && exit 0
+          git commit -m "chore(now): update current status [skip ci]"
+          git push

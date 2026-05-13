@@ -1,0 +1,49 @@
+name: 📝 Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "NOW.md"
+      - ".markdownlint.json"
+      - ".github/**"
+  pull_request:
+    paths:
+      - "README.md"
+      - "NOW.md"
+      - ".markdownlint.json"
+      - ".github/**"
+
+jobs:
+  lint-markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔍 Lint README & NOW
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            README.md
+            NOW.md
+          config: ".markdownlint.json"
+
+  lint-yaml:
+    name: YAML lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔍 Lint workflows YAML
+        run: |
+          pip install yamllint --quiet
+          yamllint -d "{extends: relaxed, rules: {line-length: {max: 200}}}" \
+            .github/workflows/

@@ -1,0 +1,72 @@
+name: 🔗 Health check — external URLs
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Chaque lundi à 7h UTC
+  workflow_dispatch:
+
+jobs:
+  check-urls:
+    name: Check external URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔍 Extract & check URLs from README
+        id: check
+        run: |
+          echo "| Status | URL |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+
+          FAILED=0
+
+          IGNORE_PATTERNS=(
+            "komarev.com"
+            "img.shields.io"
+            "readme-typing-svg"
+            "capsule-render"
+            "github.com/GregoireF/GregoireF/actions"
+          )
+
+          # Extraire les URLs uniques du README
+          mapfile -t URLS < <(grep -oP 'https?://[^\s\)\"]+' README.md | sort -u)
+
+          for URL in "${URLS[@]}"; do
+            SKIP=0
+            for PATTERN in "${IGNORE_PATTERNS[@]}"; do
+              [[ "$URL" == *"$PATTERN"* ]] && SKIP=1 && break
+            done
+            [[ $SKIP -eq 1 ]] && continue
+
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+              --connect-timeout 10 --max-time 20 \
+              -L -A "Mozilla/5.0" "$URL" 2>/dev/null || echo "ERR")
+
+            if [[ "$STATUS" =~ ^(200|201|301|302|403)$ ]]; then
+              echo "| ✅ \`$STATUS\` | $URL |" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "| ❌ \`$STATUS\` | $URL |" >> $GITHUB_STEP_SUMMARY
+              echo "::warning::URL morte — $URL (HTTP $STATUS)"
+              FAILED=$((FAILED + 1))
+            fi
+          done
+
+          echo "failed=$FAILED" >> $GITHUB_OUTPUT
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [[ $FAILED -gt 0 ]]; then
+            echo "**⚠️ $FAILED URL(s) inaccessible(s)**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**✅ Toutes les URLs sont accessibles**" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: ❌ Fail si URLs mortes
+        if: steps.check.outputs.failed != '0'
+        run: |
+          echo "::error::${{ steps.check.outputs.failed }} URL(s) morte(s) — voir le Job Summary"
+          exit 1

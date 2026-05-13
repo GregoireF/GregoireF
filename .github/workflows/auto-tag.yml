@@ -1,0 +1,39 @@
+name: 🏷️ Auto tag
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - ".github/workflows/*.yml"
+
+jobs:
+  tag:
+    name: Create date-based tag
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          fetch-depth: 0
+
+      - name: 🏷️ Tag avec la date du jour
+        run: |
+          TAG="profile-$(date '+%Y.%m.%d')"
+
+          # Vérifier si le tag existe déjà
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG déjà existant — skip"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "Profile snapshot — $TAG"
+          git push origin "$TAG"
+          echo "✅ Tag créé : $TAG"

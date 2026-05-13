@@ -1,0 +1,55 @@
+name: 💡 Feature request
+description: Proposer une idée ou une amélioration
+labels: ["enhancement", "triage"]
+assignees: ["GregoireF"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Une idée ? Une amélioration à proposer ? C'est ici.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quel problème ça résout ?
+      description: Décris le contexte. Quelle friction ou limitation t'a amené à cette idée ?
+      placeholder: "Je me retrouve souvent à... et ça prend trop de temps / c'est trop manuel..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution envisagée
+      description: Comment tu imagines la fonctionnalité ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considérées
+      description: Y a-t-il d'autres approches que tu as envisagées ?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité estimée
+      options:
+        - "🔴 Bloquant — sans ça je ne peux pas avancer"
+        - "🟠 Important — ça ferait une vraie différence"
+        - "🟡 Utile — nice to have"
+        - "🟢 Cosmétique — petite amélioration"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte additionnel
+      description: Liens, screenshots, références, exemples d'autres projets qui font ça bien.
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+# Normalisation automatique des fins de ligne
+* text=auto eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
+
+# Binaires — pas de conversion
+*.png binary
+*.jpg binary
+*.gif binary
