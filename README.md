@@ -7,10 +7,10 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/grégoire-favreau-073553260)
-[![Email](https://img.shields.io/badge/Me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gfavreau.wrprojects@gmail.com)
+[![Email](https://img.shields.io/badge/Me_contacter-4A90D9?style=for-the-badge&logo=minutemailer&logoColor=white)](mailto:gregoire.favreau@ik.me)
 [![Linktree](https://img.shields.io/badge/Linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/gregoiref)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/gregoirefavreau)
-[![Disponible](https://img.shields.io/badge/Disponible-CDI_%C2%B7_Freelance_%C2%B7_Mission-22c55e?style=for-the-badge&labelColor=16a34a)](mailto:gfavreau.wrprojects@gmail.com)
+[![Disponible](https://img.shields.io/badge/Disponible-CDI_%C2%B7_Freelance_%C2%B7_Mission-22c55e?style=for-the-badge&labelColor=16a34a)](mailto:gregoire.favreau@ik.me)
 
 <br/>
 
@@ -29,18 +29,18 @@
 
 <img align="right" src=".cache/stats.svg" width="400" alt="GitHub Stats de Grégoire Favreau" />
 
-**Dev & ingénieur infra · 27 ans · Valenciennes, FR**
+**Dev & ingénieur infra · 27 ans · Valenciennes — Hauts-de-France**
 
 Je fais le boulot de bout en bout. Composant frontend, API, pipeline CI, infra Terraform, déploiement — sans passer la main, sans ouvrir un ticket pour que quelqu'un d'autre s'en occupe.
 
-J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se voit dans mes commits.
+Autodidacte. J'ai appris en cassant des trucs et en les réparant. Ça se voit dans mes commits, dans ma façon de penser l'infra dès la première ligne de code.
 
 | | |
 | :-- | :-- |
-| 🏗️ **Comment je bosse** | IaC · CI-first · zero handoff |
-| 🌍 **Langues** | Français · Anglais |
-| 📍 **Localisation** | Valenciennes — remote possible |
-| 💼 **Dispo** | 🟢 **Ouvert aux opportunités** — CDI · Freelance · Mission · [me contacter](mailto:gfavreau.wrprojects@gmail.com) |
+| 🏗️ **Comment je bosse** | IaC · CI-first · tests · zero handoff |
+| 🌍 **Langues** | Français · Anglais technique |
+| 📍 **Localisation** | Valenciennes · Lille (50 km) · remote |
+| 💼 **Dispo** | 🟢 **Ouvert aux opportunités** — CDI · Freelance · Mission · [me contacter](mailto:gregoire.favreau@ik.me) |
 
 <br/>
 
@@ -79,6 +79,8 @@ J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se v
 **DevOps & Infra**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -112,8 +114,9 @@ Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vér
 
 | Projet | Ce que ça fait concrètement | Stack |
 | :-- | :-- | :-- |
-| **[Profil GitHub auto-maintenu](https://github.com/GregoireF/GregoireF)** | 5 workflows CI/CD · metrics quotidiennes · health-check hebdo · zéro maintenance manuelle | GitHub Actions · Python |
-| **Infrastructure k3s** (WIP) | Cluster Kubernetes auto-hébergé · stockage distribué Longhorn · ingress Traefik · TLS auto | k3s · Helm · Terraform · Linux |
+| **[Profil GitHub auto-maintenu](https://github.com/GregoireF/GregoireF)** | 5 workflows CI/CD · métriques quotidiennes · health-check hebdo · tag automatique · zéro intervention manuelle | GitHub Actions · Python |
+| **Infrastructure k3s auto-hébergée** (WIP) | Cluster Kubernetes bare-metal · Longhorn pour le stockage distribué · Traefik comme ingress · TLS automatique via cert-manager · monitoring Grafana complet | k3s · Helm · Terraform · Linux |
+| **Pipeline CI/CD multi-repo** (WIP) | Release automatisée · lint · tests · build Docker · push registry · déploiement zero-touch · notifications | GitHub Actions · Docker · Bash |
 
 </div>
 
@@ -121,14 +124,15 @@ Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vér
 
 ## 〔 05 〕&nbsp; Ce que j'apporte
 
-Je fais le tour complet — composant React/Vue, API Node, pipeline CI, Terraform, déploiement. Pas de ticket "à qui c'est ce truc en prod ?". Pas besoin d'un second profil pour l'infra.
+Ce qui différencie mon profil : je prends une feature de la spec au déploiement — composant Vue/React, API Node, pipeline CI, infra Terraform. Pas de ticket "qui gère le déploiement ?". Pas de second profil à mobiliser pour l'infra.
 
-Ce qui me rend concrètement utile selon le contexte :
+Concrètement, selon le contexte :
 
-- **Startup** — tu as besoin de quelqu'un qui ship vite et qui sait ce que ça coûte de mal configurer un déploiement. C'est moi.
-- **Mission / ESN** — je prends un sujet, je le livre, je ne reviens pas toutes les 10 minutes avec des questions. Je préfère les specs courtes et les démos fréquentes.
-- **Freelance** — un seul interlocuteur pour le front, le back, l'infra et le CI/CD. Tu ne gères pas la coordination entre trois prestataires.
-- **Équipe** — je review en pensant à la prod, pas juste au style. Ce que le code coûte à maintenir, à opérer, à monitorer.
+- **Startup / scale-up** — quelqu'un qui ship vite, sans dette cachée, et qui sait ce que ça coûte de bâcler une config de déploiement. Pas besoin d'attendre un DevOps pour merger.
+- **E-commerce / retail tech** — code stable sous la charge, pipelines qui tiennent un vendredi soir de promo, rollback propre en moins de deux minutes si besoin.
+- **Mission / ESN** — je prends un sujet, je le livre. Des démos, des livrables — pas de point de suivi hebdo pour savoir où j'en suis.
+- **Freelance** — un seul interlocuteur : front, back, infra, CI/CD. Tu ne coordonnes pas trois prestataires pour déployer une feature.
+- **Équipe technique** — je review en pensant à ce que ça coûte en prod : maintenance, monitoring, rollback. Pas juste le style.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
@@ -172,11 +176,11 @@ Ce qui me rend concrètement utile selon le contexte :
 <div align="center">
 
 Dispo pour une mission, un poste, ou un projet freelance.<br/>
-Un email suffit.
+Un email suffit — hébergé par Infomaniak, infrastructure suisse, données RGPD.
 
 <br/>
 
-[![Email](https://img.shields.io/badge/Envoyer_un_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gfavreau.wrprojects@gmail.com)
+[![Email](https://img.shields.io/badge/Envoyer_un_email-4A90D9?style=for-the-badge&logo=minutemailer&logoColor=white)](mailto:gregoire.favreau@ik.me)
 [![Discussion](https://img.shields.io/badge/Ouvrir_une_discussion-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GregoireF/GregoireF/issues)
 [![Linktree](https://img.shields.io/badge/Tous_mes_liens-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/gregoiref)
 
