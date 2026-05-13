@@ -7,6 +7,9 @@ on:
       - "NOW.md"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   update-now:
     name: Inject NOW.md into README
@@ -17,28 +20,27 @@ jobs:
 
     steps:
       - name: ⬇️ Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
       - name: 📍 Inject NOW.md into README
         run: |
-          python3 << 'PYEOF'
-import re
-import pathlib
+          python3 - << 'EOF'
+          import re, pathlib
 
-now_raw = pathlib.Path("NOW.md").read_text(encoding="utf-8")
-lines = [l for l in now_raw.splitlines() if not l.strip().startswith("<!--")]
-now_clean = "\n".join(lines).strip()
+          now_raw = pathlib.Path("NOW.md").read_text(encoding="utf-8")
+          lines = [l for l in now_raw.splitlines() if not l.strip().startswith("<!--")]
+          now_clean = "\n".join(lines).strip()
 
-readme = pathlib.Path("README.md").read_text(encoding="utf-8")
-pattern = r"<!-- NOW:START -->.*?<!-- NOW:END -->"
-replacement = "<!-- NOW:START -->\n" + now_clean + "\n<!-- NOW:END -->"
-new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+          readme = pathlib.Path("README.md").read_text(encoding="utf-8")
+          pattern = r"<!-- NOW:START -->.*?<!-- NOW:END -->"
+          replacement = "<!-- NOW:START -->\n" + now_clean + "\n<!-- NOW:END -->"
+          new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
 
-pathlib.Path("README.md").write_text(new_readme, encoding="utf-8")
-print("✅ README mis à jour avec NOW.md")
-PYEOF
+          pathlib.Path("README.md").write_text(new_readme, encoding="utf-8")
+          print("✅ README mis à jour avec NOW.md")
+          EOF
 
       - name: 💾 Commit & push
         run: |

@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=220&section=header&text=Grégoire%20Favreau&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Dev%20%2B%20Ops%20—%20du%20repo%20à%20la%20prod%2C%20seul.&descAlignY=58&descSize=18&descColor=e0e7ff&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=220&section=header&text=Grégoire%20Favreau&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Dev%20%2B%20Ops%20—%20du%20repo%20à%20la%20prod%2C%20seul.&descAlignY=58&descSize=18&descColor=e0e7ff&animation=fadeIn" alt="Grégoire Favreau — Dev + Ops" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=1400&color=818CF8&center=true&vCenter=true&width=580&lines=Vue+·+React+·+Node+·+TypeScript+·+Astro;Terraform+·+Docker+·+GitHub+Actions+·+Linux;feature+→+CI+→+prod+%F0%9F%9A%80+sans+toucher+une+console;J'automatise+ce+qui+ne+devrait+pas+l'être." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=1400&color=818CF8&center=true&vCenter=true&width=580&lines=Vue+·+React+·+Node+·+TypeScript+·+Astro+·+Docker;feature+→+CI+→+prod+🚀+sans+toucher+une+console;je+fais+le+front,+le+back,+l'infra+—+seul,+bout+en+bout;J'automatise+ce+qui+ne+devrait+pas+l'être." alt="Typing SVG" />
 
 <br/>
 
@@ -10,6 +10,7 @@
 [![Email](https://img.shields.io/badge/Me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gfavreau.wrprojects@gmail.com)
 [![Linktree](https://img.shields.io/badge/Linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/gregoiref)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/gregoirefavreau)
+[![Disponible](https://img.shields.io/badge/🟢_Disponible-CDI_·_Freelance_·_Mission-22c55e?style=for-the-badge)](mailto:gfavreau.wrprojects@gmail.com)
 
 <br/>
 
@@ -22,11 +23,11 @@
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
 ## 〔 01 〕&nbsp; Qui je suis
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=GregoireF&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&bg_color=00000000" width="385" />
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=GregoireF&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&bg_color=00000000" width="385" alt="GitHub Stats de Grégoire Favreau" />
 
 **Dev & ingénieur infra · 27 ans · Valenciennes, FR**
 
@@ -35,11 +36,11 @@ Je fais le boulot de bout en bout. Composant frontend, API, pipeline CI, infra T
 J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se voit dans mes commits.
 
 | | |
-|:--|:--|
+| :-- | :-- |
 | 🏗️ **Comment je bosse** | IaC · CI-first · zero handoff |
 | 🌍 **Langues** | Français · Anglais |
 | 📍 **Localisation** | Valenciennes — remote possible |
-| 💼 **Dispo** | **Ouvert aux opportunités** · [me contacter](mailto:gfavreau.wrprojects@gmail.com) |
+| 💼 **Dispo** | 🟢 **Ouvert aux opportunités** — CDI · Freelance · Mission · [me contacter](mailto:gfavreau.wrprojects@gmail.com) |
 
 <br/>
 
@@ -53,7 +54,7 @@ J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se v
 
 <br clear="right"/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
 ## 〔 02 〕&nbsp; Stack
 
@@ -85,7 +86,7 @@ J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se v
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
 ## 〔 03 〕&nbsp; Comment je travaille
 
@@ -101,24 +102,37 @@ Concrètement :
 
 Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vérifiées chaque lundi, section "en ce moment" injectée par workflow à chaque commit sur `NOW.md`.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
-## 〔 04 〕&nbsp; Ce que j'apporte
+## 〔 04 〕&nbsp; Réalisations
+
+> Du code livré — pas des side-projects en suspens.
 
 <div align="center">
 
-| Contexte | Ce que tu gagnes |
-|:--|:--|
-| 🏢 **Startup / Scale-up** | Quelqu'un qui code ET déploie — pas besoin d'un DevOps en plus |
-| 🏛️ **ESN / Mission** | Profil polyvalent, autonome, capable de tenir un sujet de A à Z |
-| 💼 **Freelance** | Un seul interlocuteur pour tout : front, back, infra, CI/CD |
-| 👨‍💻 **Équipe tech** | Un pair qui review avec le contexte prod en tête, pas juste le code |
+| Projet | Ce que ça fait concrètement | Stack |
+| :-- | :-- | :-- |
+| **[Profil GitHub auto-maintenu](https://github.com/GregoireF/GregoireF)** | 5 workflows CI/CD · metrics quotidiennes · health-check hebdo · zéro maintenance manuelle | GitHub Actions · Python |
+| **Infrastructure k3s *(WIP)*** | Cluster Kubernetes auto-hébergé · stockage distribué Longhorn · ingress Traefik · TLS auto | k3s · Helm · Terraform · Linux |
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
-## 〔 05 〕&nbsp; Stats & Activité
+## 〔 05 〕&nbsp; Ce que j'apporte
+
+Je fais le tour complet — composant React/Vue, API Node, pipeline CI, Terraform, déploiement. Pas de ticket "à qui c'est ce truc en prod ?". Pas besoin d'un second profil pour l'infra.
+
+Ce qui me rend concrètement utile selon le contexte :
+
+- **Startup** — tu as besoin de quelqu'un qui ship vite et qui sait ce que ça coûte de mal configurer un déploiement. C'est moi.
+- **Mission / ESN** — je prends un sujet, je le livre, je ne reviens pas toutes les 10 minutes avec des questions. Je préfère les specs courtes et les démos fréquentes.
+- **Freelance** — un seul interlocuteur pour le front, le back, l'infra et le CI/CD. Tu ne gères pas la coordination entre trois prestataires.
+- **Équipe** — je review en pensant à la prod, pas juste au style. Ce que le code coûte à maintenir, à opérer, à monitorer.
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
+
+## 〔 06 〕&nbsp; Stats & Activité
 
 <div align="center">
 
@@ -126,40 +140,23 @@ Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vér
 
 <br/>
 
-<table><tr>
-<td align="center">
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GregoireF&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css&bg_color=00000000)](https://github.com/anuraghazra/github-readme-stats)
-
-</td>
-<td align="center">
-
-[![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=gfavreau&theme=tokyonight&hide_border=true&layout=compact&v=2&bg_color=00000000)](https://wakatime.com/@gfavreau)
-
-</td>
-</tr></table>
-
-<br/>
-
 <img src=".cache/isocalendar.svg" alt="Contributions Calendar" />
 
 <details>
-<summary><b>Métriques détaillées</b> — activité, issues, achievements</summary>
+<summary><b>Métriques détaillées</b> — activité, issues, pull requests</summary>
 <br/>
 <img src=".cache/activity.svg" alt="Recent Activity" />
 <br/>
 <img src=".cache/followup.svg" alt="Issues and PRs" />
-<br/>
-<img src=".cache/achievements.svg" alt="Achievements" />
 <br/>
 <img src=".cache/base.svg" alt="GitHub Metrics" />
 </details>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12&height=2" width="100%" alt="" />
 
-## 〔 06 〕&nbsp; On bosse ensemble ?
+## 〔 07 〕&nbsp; On bosse ensemble ?
 
 <div align="center">
 
@@ -174,7 +171,7 @@ Un email suffit.
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=120&section=footer&text=Toute%20action%20répétée%20manuellement%20est%20un%20bug%20d'architecture.&fontSize=13&fontColor=e0e7ff&fontAlignY=60" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=120&section=footer&text=Toute%20action%20répétée%20manuellement%20est%20un%20bug%20d'architecture.&fontSize=13&fontColor=e0e7ff&fontAlignY=60" alt="Footer" />
 
 </div>
 
