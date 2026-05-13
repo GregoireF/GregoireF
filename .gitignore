@@ -1,0 +1,7 @@
+# Claude Code internal files
+.claude/
+
+# Temporary / local artifacts
+NOW.zip
+*.zip
+*.tmp
