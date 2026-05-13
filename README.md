@@ -27,7 +27,7 @@
 
 ## 〔 01 〕&nbsp; Qui je suis
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=GregoireF&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&bg_color=00000000" width="385" alt="GitHub Stats de Grégoire Favreau" />
+<img align="right" src=".cache/stats.svg" width="400" alt="GitHub Stats de Grégoire Favreau" />
 
 **Dev & ingénieur infra · 27 ans · Valenciennes, FR**
 
@@ -140,14 +140,25 @@ Ce qui me rend concrètement utile selon le contexte :
 
 <br/>
 
+<table><tr>
+<td align="center" width="50%">
 <img src=".cache/isocalendar.svg" alt="Contributions Calendar" />
+</td>
+<td align="center" width="50%">
+<img src=".cache/languages.svg" alt="Top Languages" />
+</td>
+</tr></table>
 
 <details>
-<summary><b>Métriques détaillées</b> — activité, issues, pull requests</summary>
+<summary><b>Métriques détaillées</b> — activité, issues, WakaTime, achievements</summary>
 <br/>
 <img src=".cache/activity.svg" alt="Recent Activity" />
 <br/>
+<img src=".cache/wakatime.svg" alt="WakaTime" />
+<br/>
 <img src=".cache/followup.svg" alt="Issues and PRs" />
+<br/>
+<img src=".cache/achievements.svg" alt="Achievements" />
 <br/>
 <img src=".cache/base.svg" alt="GitHub Metrics" />
 </details>
@@ -182,6 +193,7 @@ Un email suffit.
 <a href=".github/workflows/metrics.yml">metrics</a> · quotidien &nbsp;|&nbsp;
 <a href=".github/workflows/health-check.yml">health-check</a> · lundi &nbsp;|&nbsp;
 <a href=".github/workflows/update-now.yml">now</a> · à chaque commit &nbsp;|&nbsp;
-<a href=".github/workflows/lint.yml">lint</a> · à chaque push
+<a href=".github/workflows/lint.yml">lint</a> · à chaque push &nbsp;|&nbsp;
+<a href=".github/workflows/auto-tag.yml">auto-tag</a> · à chaque merge
 </sub>
 </div>
