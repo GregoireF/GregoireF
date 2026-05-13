@@ -47,9 +47,9 @@ J'ai appris seul, sur le tas, en cassant des trucs et en les réparant. Ça se v
 **En ce moment**
 
 <!-- NOW:START -->
-🔨 Refonte du profil GitHub — workflows, automatisation
-🌱 Kubernetes — clusters perso en cours
-📖 *The DevOps Handbook*
+🚀 Cluster k3s auto-hébergé — Longhorn, Traefik, cert-manager, monitoring Grafana
+🔧 Pipeline CI/CD multi-repo : lint, release, déploiement zero-touch via GitHub Actions
+📖 *The DevOps Handbook* — Forsgren, Kim, Humble
 <!-- NOW:END -->
 
 <br clear="right"/>
