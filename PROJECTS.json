@@ -7,6 +7,13 @@
     "wip": false
   },
   {
+    "name": "addlicense",
+    "url": "https://github.com/GregoireF/addlicense",
+    "description": "CLI Go minimaliste pour gérer les en-têtes de licence — SPDX, monorepos, CI-native, idempotent",
+    "stack": "Go · GoReleaser · GitHub Actions",
+    "wip": true
+  },
+  {
     "name": "Infrastructure k3s auto-hébergée",
     "url": null,
     "description": "Cluster Kubernetes bare-metal · Longhorn pour le stockage distribué · Traefik comme ingress · TLS automatique via cert-manager · monitoring Grafana complet",
