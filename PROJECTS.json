@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Profil GitHub auto-maintenu",
+    "url": "https://github.com/GregoireF/GregoireF",
+    "description": "5 workflows CI/CD · métriques quotidiennes · health-check hebdo · tag automatique · zéro intervention manuelle",
+    "stack": "GitHub Actions · Python",
+    "wip": false
+  },
+  {
+    "name": "Infrastructure k3s auto-hébergée",
+    "url": null,
+    "description": "Cluster Kubernetes bare-metal · Longhorn pour le stockage distribué · Traefik comme ingress · TLS automatique via cert-manager · monitoring Grafana complet",
+    "stack": "k3s · Helm · OpenTofu · Linux",
+    "wip": true
+  },
+  {
+    "name": "Pipeline CI/CD multi-repo",
+    "url": null,
+    "description": "Release automatisée · lint · tests · build Docker · push registry · déploiement zero-touch · notifications",
+    "stack": "GitHub Actions · Docker · Bash",
+    "wip": true
+  }
+]
