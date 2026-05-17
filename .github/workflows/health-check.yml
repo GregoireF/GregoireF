@@ -40,6 +40,7 @@ jobs:
             "github.com/GregoireF/GregoireF/actions"
             "streak-stats.demolab.com"
             "git.io"
+            "linkedin.com"
           )
 
           # Extraire les URLs uniques du README

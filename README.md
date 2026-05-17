@@ -162,15 +162,11 @@ Concrètement, selon le contexte :
 </tr></table>
 
 <details>
-<summary><b>Métriques détaillées</b> — activité, issues, WakaTime, achievements</summary>
-<br/>
-<img src=".cache/activity.svg" alt="Recent Activity" />
+<summary><b>Métriques détaillées</b> — WakaTime, issues & PRs, base</summary>
 <br/>
 <img src=".cache/wakatime.svg" alt="WakaTime" />
 <br/>
 <img src=".cache/followup.svg" alt="Issues and PRs" />
-<br/>
-<img src=".cache/achievements.svg" alt="Achievements" />
 <br/>
 <img src=".cache/base.svg" alt="GitHub Metrics" />
 </details>
