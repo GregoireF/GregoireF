@@ -123,8 +123,7 @@ Ce README tourne sur ce modèle : metrics régénérées chaque matin, URLs vér
 | :-- | :-- | :-- |
 | **[Profil GitHub auto-maintenu](https://github.com/GregoireF/GregoireF)** | 5 workflows CI/CD · métriques quotidiennes · health-check hebdo · tag automatique · zéro intervention manuelle | GitHub Actions · Python |
 | **[addlicense](https://github.com/GregoireF/addlicense)** (WIP) | CLI Go minimaliste pour gérer les en-têtes de licence — SPDX, monorepos, CI-native, idempotent | Go · GoReleaser · GitHub Actions |
-| **Infrastructure k3s auto-hébergée** (WIP) | Cluster Kubernetes bare-metal · Longhorn pour le stockage distribué · Traefik comme ingress · TLS automatique via cert-manager · monitoring Grafana complet | k3s · Helm · OpenTofu · Linux |
-| **Pipeline CI/CD multi-repo** (WIP) | Release automatisée · lint · tests · build Docker · push registry · déploiement zero-touch · notifications | GitHub Actions · Docker · Bash |
+| **[Infrastructure as Code pour GitHub et Doppler](https://github.com/GregoireF/iac)** (WIP) | Description à venir | Terraform · OpenTofu · Doppler · GitHub · Go · Just · Docker |
 <!-- PROJECTS:END -->
 
 </div>
