@@ -14,17 +14,10 @@
     "wip": true
   },
   {
-    "name": "Infrastructure k3s auto-hébergée",
-    "url": null,
-    "description": "Cluster Kubernetes bare-metal · Longhorn pour le stockage distribué · Traefik comme ingress · TLS automatique via cert-manager · monitoring Grafana complet",
-    "stack": "k3s · Helm · OpenTofu · Linux",
-    "wip": true
-  },
-  {
-    "name": "Pipeline CI/CD multi-repo",
-    "url": null,
-    "description": "Release automatisée · lint · tests · build Docker · push registry · déploiement zero-touch · notifications",
-    "stack": "GitHub Actions · Docker · Bash",
+    "name": "Infrastructure as Code pour GitHub et Doppler",
+    "url": "https://github.com/GregoireF/iac",
+    "description": "Description à venir",
+    "stack": "Terraform · OpenTofu · Doppler · GitHub · Go · Just · Docker",
     "wip": true
   }
 ]
