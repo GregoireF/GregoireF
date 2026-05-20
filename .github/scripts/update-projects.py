@@ -30,6 +30,7 @@ def update_readme(table: str) -> bool:
         original,
         flags=re.DOTALL,
     )
+    updated = updated.rstrip("\n") + "\n"
     if updated == original:
         print("No changes.")
         return False

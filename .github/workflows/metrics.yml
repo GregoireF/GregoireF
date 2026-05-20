@@ -135,4 +135,3 @@ jobs:
           output_action: commit
           committer_token: ${{ secrets.METRICS_TOKEN }}
           committer_message: "chore(metrics): update followup [skip ci]"
-

@@ -209,4 +209,3 @@ Un email suffit — hébergé par Infomaniak, infrastructure suisse, données RG
 <a href=".github/workflows/auto-tag.yml">auto-tag</a> · à chaque merge
 </sub>
 </div>
-
