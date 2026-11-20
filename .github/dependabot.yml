@@ -1,0 +1,35 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Paris
+    # Wait a week before proposing a new version: most hijacked releases are caught by then.
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "ci"
+    labels: [dependencies]
+
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Paris
+    # Wait a week before proposing a new version: most hijacked releases are caught by then.
+    cooldown:
+      default-days: 7
+    groups:
+      tooling:
+        patterns: ["*"]
+    commit-message:
+      prefix: "build"
+    labels: [dependencies]

@@ -1,0 +1,41 @@
+name: Auto-heal
+
+# When a workflow fails: re-run its failed jobs once. If it fails again, open
+# an issue. When it turns green, close that issue. No checkout of the failing
+# run's code happens here, only its metadata is read.
+
+on:
+  workflow_run: # zizmor: ignore[dangerous-triggers] metadata only, nothing from the run is executed
+    workflows: [CI, Cards, Play, Profile sync, Links, Scorecard, Keepalive, CodeQL]
+    types: [completed]
+
+permissions: {}
+
+jobs:
+  heal:
+    name: Retry or report
+    if: github.event.workflow_run.event != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write # re-run failed jobs
+      issues: write # open or close the failure issue
+      contents: read
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: package.json
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          WF_NAME: ${{ github.event.workflow_run.name }}
+          WF_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+          WF_RUN_ID: ${{ github.event.workflow_run.id }}
+          WF_ATTEMPT: ${{ github.event.workflow_run.run_attempt }}
+          WF_URL: ${{ github.event.workflow_run.html_url }}
+        run: bun src/cli.ts heal

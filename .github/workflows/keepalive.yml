@@ -1,0 +1,31 @@
+name: Keepalive
+
+# GitHub turns off scheduled workflows after 60 days without activity on the
+# repository. main is only touched by hand, so re-enable them every month.
+
+on:
+  schedule:
+    - cron: "0 4 1 * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  enable:
+    name: Re-enable scheduled workflows
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          for wf in cards.yml links.yml scorecard.yml codeql.yml keepalive.yml; do
+            gh api -X PUT "repos/$REPO/actions/workflows/$wf/enable"
+            echo "enabled $wf"
+          done

@@ -1,0 +1,7 @@
+# LinkedIn answers 999 to anything that isn't a browser.
+^https://www\.linkedin\.com/
+# Counters and badges: rendered images, not pages.
+^https://komarev\.com/
+^https://img\.shields\.io/
+# Prefilled "new issue" links redirect to a login page for bots.
+/issues/new\?
