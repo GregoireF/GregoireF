@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  migrate:
+    desc: Apply database migrations
+    cmds: [go run ./cmd/migrate up]
+  test:
+    desc: Run the test suite
+    cmds: [go test ./...]
+  serve:
+    desc: Start the billing API
+    cmds: [go run ./cmd/billing]

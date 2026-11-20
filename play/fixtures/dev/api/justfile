@@ -1,0 +1,9 @@
+set shell := ["bash", "-cu"]
+
+# Start the API with live reload
+watch:
+    cargo watch -x run
+
+# Run the tests
+test:
+    cargo test
