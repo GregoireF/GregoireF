@@ -1,0 +1,49 @@
+name: Cards
+
+# Draws every SVG card and pushes them to the `output` branch as a single
+# orphan commit. main never receives generated files.
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "profile.config.ts"
+      - ".github/workflows/cards.yml"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    name: Render and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write # push the output branch
+      issues: write # open or close the "README is out of date" issue
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: package.json
+      - run: bun install --frozen-lockfile
+      - name: Film the hero if needed, render, publish, check README drift
+        env:
+          # Reading: the account token sees the full contribution calendar.
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || github.token }}
+          # Writing: the workflow token, so commits and issues come from the bot.
+          PUBLISH_TOKEN: ${{ github.token }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_TOKEN }}
+        run: bun src/cli.ts cards --publish --drift --film

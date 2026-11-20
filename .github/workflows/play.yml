@@ -1,0 +1,80 @@
+name: Play
+
+# A visitor opens an issue titled "run: <command>". The command is matched
+# against an allowlist in profile.config.ts, run on the latest release in a
+# job that only has read access, and the answer is posted by a second job.
+
+on:
+  issues:
+    types: [opened]
+
+permissions: {}
+
+concurrency:
+  group: play-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    name: Run the command
+    if: startsWith(github.event.issue.title, 'run:') && github.event.issue.user.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: read
+    outputs:
+      result: ${{ steps.run.outputs.result }}
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: package.json
+      - id: run
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          RESULT_FILE: ${{ runner.temp }}/result.json
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          bun src/cli.ts play run
+          echo "result=$(base64 -w0 "$RESULT_FILE")" >> "$GITHUB_OUTPUT"
+
+  respond:
+    name: Answer and update the card
+    needs: run
+    if: always() && needs.run.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # update play.json and the card on the output branch
+      issues: write # comment, close, lock
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: package.json
+      - run: bun install --frozen-lockfile
+      - env:
+          RESULT_B64: ${{ needs.run.outputs.result }}
+          RESULT_FILE: ${{ runner.temp }}/result.json
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$RESULT_B64" ]; then
+            printf '%s' "$RESULT_B64" | base64 -d > "$RESULT_FILE"
+          else
+            echo '{"ok":false,"reason":"Something broke on my side while running that. I get an alert, sorry about it."}' > "$RESULT_FILE"
+          fi
+          bun src/cli.ts play respond

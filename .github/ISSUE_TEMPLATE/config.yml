@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email me
+    url: mailto:gregoire.favreau@ik.me
+    about: Work, questions, anything else.
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/gr%C3%A9goire-favreau-36a43444a/
+    about: Same thing, on LinkedIn.
+  - name: Report a problem with one of my tools
+    url: https://github.com/GregoireF?tab=repositories
+    about: Please open it in the tool's own repository.

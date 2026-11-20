@@ -1,0 +1,39 @@
+name: Profile sync
+
+# Profile as code: pushes the `account` and `repository` blocks of
+# profile.config.ts to GitHub (bio, location, website, description, topics),
+# and keeps the labels the automation relies on.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "profile.config.ts"
+      - "src/sync.ts"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  sync:
+    name: Sync account, repository and labels
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write # labels
+    steps:
+      - uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
+        with:
+          egress-policy: audit
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: package.json
+      - env:
+          # Account settings need a user token; labels only need the workflow's.
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.METRICS_TOKEN }}
+          LABELS_TOKEN: ${{ github.token }}
+        run: bun src/cli.ts sync

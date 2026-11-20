@@ -1,0 +1,18 @@
+name: Run a command
+description: Run kiwa, ship-it or addlicense from the profile page and get the output here.
+title: "run: kw list"
+labels: [play]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The title is the command. Leave it as it is, or put your own text where the profile shows `<…>`.
+
+        Submit, and a workflow installs the latest release, runs the command on a [small demo folder](https://github.com/GregoireF/GregoireF/tree/main/play/fixtures/dev) and replies here, usually within a minute. Then it closes the issue.
+  - type: textarea
+    id: note
+    attributes:
+      label: Anything to add? (optional)
+      description: Feedback on the tools is welcome.
+    validations:
+      required: false
