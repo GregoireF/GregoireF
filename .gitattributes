@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.gif binary
+bun.lock linguist-generated
+play/fixtures/** linguist-vendored
