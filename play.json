@@ -1,0 +1,20 @@
+{
+  "runs": 1,
+  "last": {
+    "user": "GregoireF",
+    "command": "kw list",
+    "output": [
+      "PROJECT          STACK      BRANCH          TASKS",
+      "api              rust,just  -               6",
+      "billing          go,task    -               6",
+      "docs-site        python     -               0",
+      "infra            make       -               3",
+      "shop/storefront  node       -               4",
+      "",
+      "5 projects · 19 tasks · scanned in 2 ms"
+    ],
+    "ok": true,
+    "at": "2026-11-20T17:04:59.531Z",
+    "issue": 17
+  }
+}

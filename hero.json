@@ -1,0 +1,146 @@
+{
+  "fingerprint": "24wcltttc5upf",
+  "capturedAt": "2026-11-20T21:54:16.734Z",
+  "versions": {
+    "kiwa": "v0.1.0",
+    "ship-it": "v0.1.2",
+    "addlicense": "v1.0.1"
+  },
+  "scenes": [
+    {
+      "tool": "kiwa",
+      "tagline": "Find any project. Run any task.",
+      "git": false,
+      "steps": [
+        {
+          "argv": [
+            "kw",
+            "list"
+          ],
+          "code": 0,
+          "ms": 8,
+          "output": [
+            "PROJECT          STACK      BRANCH          TASKS",
+            "api              rust,just  -               6",
+            "billing          go,task    -               6",
+            "docs-site        python     -               0",
+            "infra            make       -               3",
+            "shop/storefront  node       -               4",
+            "",
+            "5 projects · 19 tasks · scanned in 4 ms"
+          ]
+        },
+        {
+          "argv": [
+            "kw",
+            "about",
+            "billing"
+          ],
+          "code": 0,
+          "ms": 4,
+          "output": [
+            "◆ billing",
+            "  stack    go, task",
+            "",
+            "start",
+            "  dev      kw billing serve",
+            "  test     kw billing test",
+            "  build    kw billing build",
+            "",
+            "needs",
+            "  go       >=1.25       go.mod"
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "ship-it",
+      "tagline": "You write the code. It ships the branch, commit and PR.",
+      "git": true,
+      "steps": [
+        {
+          "argv": [
+            "ship",
+            "plan"
+          ],
+          "code": 0,
+          "ms": 20,
+          "output": [
+            "✨ feat(vat): add rate",
+            "  branch    feat/add-rate",
+            "  files     1",
+            "  why       • Dominant category: source code (1 of 1 file).",
+            "            • 1 new source file."
+          ]
+        },
+        {
+          "argv": [
+            "ship",
+            "status",
+            "--offline"
+          ],
+          "code": 0,
+          "ms": 13,
+          "output": [
+            "main",
+            "  Changes       1 file not shipped",
+            "  Upstream      not pushed yet",
+            "",
+            "→ Ship your 1 changed file: ship"
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "addlicense",
+      "tagline": "License headers, checked and fixed in one pass.",
+      "git": false,
+      "steps": [
+        {
+          "argv": [
+            "addlicense",
+            "--check",
+            "."
+          ],
+          "code": 1,
+          "ms": 3,
+          "output": [
+            "missing header: README.md",
+            "missing header: docs-site/pyproject.toml",
+            "missing header: api/Cargo.toml",
+            "missing header: billing/Taskfile.yml",
+            "missing header: shop/storefront/pnpm-lock.yaml",
+            "5 file(s) missing license header"
+          ]
+        },
+        {
+          "argv": [
+            "addlicense",
+            "--license",
+            "MIT",
+            "."
+          ],
+          "code": 0,
+          "ms": 3,
+          "output": [
+            "✓ README.md",
+            "✓ api/Cargo.toml",
+            "✓ billing/Taskfile.yml",
+            "✓ shop/storefront/pnpm-lock.yaml",
+            "✓ docs-site/pyproject.toml"
+          ]
+        },
+        {
+          "argv": [
+            "addlicense",
+            "--check",
+            "."
+          ],
+          "code": 0,
+          "ms": 2,
+          "output": []
+        }
+      ]
+    }
+  ]
+}
